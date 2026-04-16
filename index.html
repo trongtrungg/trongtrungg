@@ -1,84 +1,207 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Minimal Profile</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Inter',sans-serif;
-}
-body{
-    background:#0f0f10;
-    color:#eaeaea;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-.container{
-    width:320px;
-}
-.card{
-    text-align:center;
-}
-.avatar{
-    width:90px;
-    height:90px;
-    border-radius:50%;
-    margin-bottom:15px;
-    filter: grayscale(100%);
-}
-h2{
-    font-size:20px;
-    font-weight:600;
-}
-p{
-    font-size:13px;
-    color:#888;
-    margin:8px 0 20px;
-}
-.link{
-    display:block;
-    text-decoration:none;
-    color:#eaeaea;
-    padding:12px;
-    margin:8px 0;
-    border:1px solid #2a2a2a;
-    border-radius:10px;
-    transition:0.25s;
-}
-.link:hover{
-    background:#1a1a1a;
-    border-color:#444;
-}
-.footer{
-    margin-top:20px;
-    font-size:11px;
-    color:#555;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung - Giới Thiệu Bản Thân</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4c51bf, #6b46c1);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 6px solid white;
+            margin: 0 auto 20px;
+            background: url('https://via.placeholder.com/160') center/cover no-repeat;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .name { font-size: 2.8rem; font-weight: 700; margin-bottom: 8px; }
+        .title { font-size: 1.4rem; opacity: 0.95; margin-bottom: 10px; }
+        .location { font-size: 1.1rem; opacity: 0.85; }
+
+        .content { padding: 50px 60px; }
+
+        .section { margin-bottom: 45px; }
+
+        h2 {
+            color: #4c51bf;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+
+        p { font-size: 1.1rem; color: #555; margin-bottom: 15px; }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-tag {
+            background: #f1f5f9;
+            color: #475569;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        /* Phần Liên hệ */
+        .contact-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-title {
+            font-size: 1.6rem;
+            color: #4c51bf;
+            margin-bottom: 25px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            background: #f8fafc;
+            color: #334155;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid #e2e8f0;
+            min-width: 160px;
+            justify-content: center;
+        }
+
+        .social-btn:hover {
+            background: #4c51bf;
+            color: white;
+            transform: translateY(-4px);
+            border-color: #4c51bf;
+        }
+
+        .social-btn i { font-size: 1.4rem; }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="card">
+            <!-- Header -->
+            <div class="header">
+                <div class="avatar"></div>
+                <h1 class="name">Nguyễn Văn Trung</h1>
+                <p class="title">Lập Trình Viên Web • Freelancer</p>
+                <p class="location">📍 TP. Hồ Chí Minh, Việt Nam</p>
+            </div>
 
-<div class="container">
-    <div class="card">
-        <img src="https://i.imgur.com/2DhmtJ4.png" class="avatar">
-        <h2>Tên của bạn</h2>
-        <p>Nguyễn Trọng Trung</p>
+            <!-- Nội dung -->
+            <div class="content">
+                <div class="section">
+                    <h2>Về tôi</h2>
+                    <p>
+                        Xin chào! Mình là Trung, một lập trình viên đam mê công nghệ với hơn 3 năm kinh nghiệm 
+                        trong lĩnh vực phát triển web. Mình thích tạo ra những sản phẩm đẹp, dễ sử dụng và mang lại 
+                        giá trị thực sự cho người dùng.
+                    </p>
+                </div>
 
-        <a href="https://facebook.com/trongtrung450" class="link" target="_blank">Facebook</a>
-        <a href="https://zalo.me/yourlink" class="link" target="_blank">Zalo</a>
-        <a href="https://tiktok.com/@yourlink" class="link" target="_blank">TikTok</a>
-        <a href="mailto:yourmail@gmail.com" class="link">Email</a>
+                <div class="section">
+                    <h2>Kỹ năng chính</h2>
+                    <div class="skills">
+                        <span class="skill-tag">HTML5 & CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                    </div>
+                </div>
 
-        <div class="footer">© 2026</div>
+                <!-- Liên hệ -->
+                <div class="contact-section">
+                    <h2 class="contact-title">Liên hệ với mình</h2>
+                    <div class="social-links">
+                        <a href="https://facebook.com/" target="_blank" class="social-btn">
+                            <i class="fab fa-facebook"></i>
+                            Facebook
+                        </a>
+                        <a href="https://zalo.me/" target="_blank" class="social-btn">
+                            <i class="fas fa-comment-dots"></i>
+                            Zalo
+                        </a>
+                        <a href="https://instagram.com/" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </a>
+                        <a href="https://github.com/" target="_blank" class="social-btn">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="mailto:your.email@gmail.com" class="social-btn">
+                            <i class="fas fa-envelope"></i>
+                            Gmail
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
+    <footer>
+        © 2026 Nguyễn Văn Trung • Made with ❤️ tại TP. Hồ Chí Minh
+    </footer>
 </body>
 </html>
